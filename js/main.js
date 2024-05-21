@@ -26,8 +26,10 @@ function dividir (){
     let resultado = numeroA / numeroB
     alert(numeroA + "/" + numeroB + "=" + resultado)
 }
-
-let opcion = parseInt(prompt("Elija una opcion:\n 1-sumar\n 2-restar\n 3-multiplicar\n 4-dividir\n 5-salir"))
+function mostrarMenu(){   
+return parseInt(prompt("Elija una opcion:\n 1-sumar\n 2-restar\n 3-multiplicar\n 4-dividir\n 5-salir"))
+}
+let opcion = mostrarMenu()
 
 while(opcion !==5){
     switch(opcion){
@@ -47,6 +49,6 @@ while(opcion !==5){
             alert("Opcion incorrecta")   
             break 
     }
-    opcion = parseInt(prompt("Elija una opcion:\n 1-sumar\n 2-restar\n 3-multiplicar\n 4-dividir\n 5-salir"))
+    opcion = mostrarMenu()
 }
 alert("Graciass!!")
